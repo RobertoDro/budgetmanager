@@ -1,4 +1,4 @@
-package com.dro.budgetmanager.data;
+package com.dro.budgetmanager.model;
 
 
 import lombok.Data;

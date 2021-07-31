@@ -1,13 +1,13 @@
-package com.dro.budgetmanager.dataDTO;
+package com.dro.budgetmanager.modelDTO;
 
 
-import com.dro.budgetmanager.data.Wallet;
+import com.dro.budgetmanager.model.Wallet;
 import lombok.*;
 
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
-import java.sql.Timestamp;
+import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -23,6 +23,6 @@ public class IncomeDTO {
     private String name;
     @Min(0)
     private Double amount;
-    private Timestamp date;
+    private LocalDate date;
 
 }

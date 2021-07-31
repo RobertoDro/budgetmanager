@@ -1,4 +1,4 @@
-package com.dro.budgetmanager.data;
+package com.dro.budgetmanager.model;
 
 public enum ProductType {
 

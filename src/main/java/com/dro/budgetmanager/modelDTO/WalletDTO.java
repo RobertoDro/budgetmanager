@@ -1,14 +1,12 @@
-package com.dro.budgetmanager.dataDTO;
+package com.dro.budgetmanager.modelDTO;
 
-import com.dro.budgetmanager.data.Income;
-import com.dro.budgetmanager.data.Product;
+import com.dro.budgetmanager.model.Income;
+import com.dro.budgetmanager.model.Product;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.CascadeType;
-import javax.persistence.OneToMany;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,14 +1,12 @@
-package com.dro.budgetmanager.dataDTO;
+package com.dro.budgetmanager.modelDTO;
 
-import com.dro.budgetmanager.data.ProductType;
-import com.dro.budgetmanager.data.Wallet;
+import com.dro.budgetmanager.model.ProductType;
+import com.dro.budgetmanager.model.Wallet;
 import lombok.*;
 
-import javax.persistence.Enumerated;
-import javax.persistence.ManyToOne;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
-import java.sql.Timestamp;
+import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -24,7 +22,7 @@ public class ProductDTO {
     @Min(0)
     private Double price;
 
-    private Timestamp date;
+    private LocalDate date;
 
     private ProductType type;
 

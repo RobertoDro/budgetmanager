@@ -1,7 +1,7 @@
 package com.dro.budgetmanager.mapping;
 
-import com.dro.budgetmanager.data.Product;
-import com.dro.budgetmanager.dataDTO.ProductDTO;
+import com.dro.budgetmanager.model.Product;
+import com.dro.budgetmanager.modelDTO.ProductDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

@@ -1,7 +1,7 @@
 package com.dro.budgetmanager.mapping;
 
-import com.dro.budgetmanager.data.Income;
-import com.dro.budgetmanager.dataDTO.IncomeDTO;
+import com.dro.budgetmanager.model.Income;
+import com.dro.budgetmanager.modelDTO.IncomeDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

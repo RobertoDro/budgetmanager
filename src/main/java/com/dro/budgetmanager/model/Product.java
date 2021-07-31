@@ -1,22 +1,25 @@
-package com.dro.budgetmanager.data;
+package com.dro.budgetmanager.model;
 
 import lombok.Data;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
+import java.time.LocalDate;
 
 @Entity
 @Data
-public class Income {
+public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
-    private Double amount;
+    private Double price;
 
-    private Timestamp date;
+    private LocalDate date;
+
+    @Enumerated(value = EnumType.STRING)
+    private ProductType type;
 
     @ManyToOne(targetEntity = Wallet.class)
     private Wallet wallet;
