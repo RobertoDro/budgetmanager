@@ -4,6 +4,7 @@ package com.dro.budgetmanager.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -17,8 +18,8 @@ public class Wallet {
     private Double amount;
 
     @OneToMany(mappedBy = "wallet", cascade = CascadeType.ALL)
-    private List<Product> spending;
+    private List<Product> spending = new ArrayList<>();
 
     @OneToMany(mappedBy = "wallet",cascade = CascadeType.ALL)
-    private List<Income> incomes;
+    private List<Income> incomes = new ArrayList<>();
 }
